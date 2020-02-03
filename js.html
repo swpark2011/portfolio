@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>자바스크립트</title>
 </head>
 <body onLoad="alert('환영합니다')" >
 <form id="form" ondblclick="dblClickFunction(this.id)">
@@ -10,20 +10,20 @@
 첫번째 input: <input type="text" id="name1" onfocus="focusFunction(this.id)"><br>
 두번째 input: <input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
 세번째 input: <input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
-</form>
+</form> 
 <script>
 function dblClickFunction(x) {
 	if(document.getElementById(x).style.background == "white"){
 		document.getElementById(x).style.background = "green";
 	}else{
-		document.getElementById(x).style.background = "white";
+		document.getElementById(x).style.background = "white"; 
 	}
-}
+} 
 function focusFunction(x) {
     document.getElementById(x).style.background = "yellow";
 }
 function blurFunction(x) {
-    document.getElementById(x).style.background = "red";
+    document.getElementById(x).style.background = "blue";
 }
 </script>
 </body>
