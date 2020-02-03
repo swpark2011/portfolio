@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>바디에 효과</title>
+<title>백그라운드 효과</title>
 </head>
-<body dblClick="dblClickFunction()">
+<body>
 <button id="myButton">Click me</button><!-- myButton이라는 아이디값을 갖는 버튼생성 --><br/>
 <form id="form_dbl" >
 
@@ -18,16 +18,17 @@
 //myButton이라는 아이디값을 갖는 엘리먼트를 찾아 button에 저장
 var button = document.getElementById('myButton'); 
 //button 에 click이벤트핸들러 추가
-button.addEventListener('click', function() { 
+button.addEventListener('dblclick', function() { 
 //버튼 클릭시 'button clicked' 라고 출력
-document.write('button clicked!'); 
+//document.write('button clicked!'); 
+dblClickFunction();
 });
 
 function dblClickFunction() {
-	if(document.style.background == "white"){
-		document.style.background = "green";
+	if(document.bgColor == "white"){
+		document.bgColor = "green";
 	}else{
-		document.style.background = "white";
+		document.bgColor = "white";
 	}
 }
 function focusFunction(x) {
