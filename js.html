@@ -2,29 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>자바스크립트</title> 
+<title>J-Query 제이쿼리</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body onLoad="alert('환영합니다')">
-<form id="form" ondblclick="dblClickFunction(this.id)">
-<input type = "button" value = "배경색 변경" onClick="document.bgColor='green';">
-첫번째 input: <input type="text" id="name1" onfocus="focusFunction(this.id)"><br>
-두번째 input: <input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
-세번째 input: <input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
-</form> 
-<script>
-function dblClickFunction(x) {
-	if(document.getElementById(x).style.background == "white"){
-		document.getElementById(x).style.background = "green";
-	}else{
-		document.getElementById(x).style.background = "white"; 
-	}
-} 
-function focusFunction(x) {
-    document.getElementById(x).style.background = "yellow";
-}
-function blurFunction(x) {
-    document.getElementById(x).style.background = "blue";
-}
-</script>
+<body>
+<h1>test1</h1>
+<h1 id="hid">test2</h1>
+<h1 name="hname">test3</h1>
+<h1 class="hcls">test4</h1>
 </body>
+<script>
+	$("h1").css("color, red");
+</script>
 </html>
